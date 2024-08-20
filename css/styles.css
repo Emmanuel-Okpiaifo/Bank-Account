@@ -50,22 +50,37 @@ body{
     text-shadow: 2px 1px black;
 }
 
-.container2 {
-    background-color: #efefef;
-    width: 100vmax;
-    height: 100vmin;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding-left: 60px;
+h3 {
+    color: #007bff;
 }
 
+#balance {
+    font-size: 1.5rem;
+    color: #28a745;
+}
 
-#show-contact {
-    display: none;
-  }
+ul#transactions {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
 
+ul#transactions li {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+}
 
+#account-section {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.btn-block {
+    width: 100%;
+}
 
 
 
