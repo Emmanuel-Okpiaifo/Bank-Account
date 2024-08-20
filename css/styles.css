@@ -29,9 +29,9 @@ body{
 }
 
 .myBanner{
-    background-image: url(../img/Image_6.jpg);
+    background-image: url(../img/img-gallery-1.ae7c8d38.png);
     width: 100vmax;
-    height: 100vh;
+    height: 100vmin;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -50,9 +50,20 @@ body{
     text-shadow: 2px 1px black;
 }
 
+.container2 {
+    background-color: #efefef;
+    width: 100vmax;
+    height: 100vmin;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-left: 60px;
+}
 
 
-
+#show-contact {
+    display: none;
+  }
 
 
 
