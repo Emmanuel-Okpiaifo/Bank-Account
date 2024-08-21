@@ -81,6 +81,97 @@ header {
     text-shadow: 2px 1px black;
 }
 
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #dee2e6;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* Responsive grid for the main cards */
+.grid-cols-4 {
+    grid-template-columns: 1fr;
+}
+
+@media(min-width: 576px) {
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 992px) {
+    .grid-cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card {
+    background-color: #222;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h3 {
     color: #007bff;
 }
@@ -130,6 +221,7 @@ footer {
     background: rgba(0, 0, 0, 0.815);
     overflow-x: hidden;
     padding: 14vmin 18vmin;
+    background-color: ;
 }
   
   footer p > span {
