@@ -32,10 +32,39 @@
     </nav>
 </header>
 
-  <div class="myBanner">
-    <h2>Premium Trust Bank</h2>
-    <p>Open an account with us </p>
-    <a href="main.html" class="btn btn-outline-danger">Let's assist you with your banking needs</a>
+
+  <div class="container mt-5">
+    <h3 class="text-center">Bank Account Manager</h3>
+
+    <form id="new-account" class="mb-4">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" class="form-control" min="0" required>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" class="form-control" min="0" required>
+        <label for="initial-deposit">Initial Deposit Amount:</label>
+        <input type="number" id="initial-deposit" class="form-control" min="0" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+    </form>
+
+    <div id="account-section" class="mt-4" style="display:none;">
+      <h4 id="balance"></h4>
+      <ul id="transactions" class="list-group mb-4"></ul>
+
+      <form id="transaction-form">
+        <div class="form-group">
+          <label>Transaction Type:</label><br>
+          <input type="radio" name="action" value="deposit" checked> Deposit
+          <input type="radio" name="action" value="withdraw"> Withdraw
+        </div>
+        <div class="form-group">
+          <label for="transaction-amount">Amount:</label>
+          <input type="number" id="transaction-amount" class="form-control" min="0" required>
+        </div>
+        <button type="submit" class="btn btn-success btn-block">Submit Transaction</button>
+      </form>
+    </div>
   </div>
 
 
