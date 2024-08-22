@@ -16,16 +16,16 @@ _Banking app; currently only stores and displays user accounts and funds until p
 ## Specifications
 
 * Take user's account information.
-  * Example input: Emma, $500
-  * Example output: Emma, $500
+  * Example input: Emma, NGN500
+  * Example output: Emma, NGN500
 
 * Deposit funds.
-  * Example input: $50
-  * Example output: $550
+  * Example input: NGN50
+  * Example output: NGN550
 
 * Withdraw funds.
-  * Example input: $100
-  * Example output: $450
+  * Example input: NGN100
+  * Example output: NGN450
 
 ## Support and contact details
 
