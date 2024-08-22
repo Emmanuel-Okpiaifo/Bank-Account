@@ -14,7 +14,7 @@ BankAccount.prototype.withdraw = function(amount) {
         this.balance -= amount;
         this.transactions.push({ type: "Withdrawal", amount: amount });
     } else {
-        alert("Insufficient funds!");
+        showPopupMessage("Insufficient Funds")
     }
 };
 
@@ -47,7 +47,7 @@ BankApp.prototype.findAccount = function(id) {
 
 // User Interface Logic
 let bankApp = new BankApp();
-let currentAccount;
+let currentAccount = null;
 
 function displayAccountDetails(account) {
     let transactionList = $("ul#transactions");
@@ -58,6 +58,19 @@ function displayAccountDetails(account) {
     transactionList.html(htmlForTransactionInfo);
 
     $("#balance").text(`Balance: $${account.getBalance()}`);
+}
+
+function showPopupMessage(message) {
+    const popup = document.getElementById("popup-message");
+    document.getElementById("popup-text").textContent = message;
+    popup.classList.remove("hidden");
+    popup.style.display = "block";
+}
+
+function hidePopupMessage() {
+    const popup = document.getElementById("popup-message");
+    popup.classList.add("hidden");
+    popup.style.display = "none";
 }
 
 function attachAccountListeners() {
@@ -75,7 +88,12 @@ function attachAccountListeners() {
         displayAccountDetails(currentAccount);
         $("#transaction-amount").val("");
     });
+    
 }
+
+    // Close pop-up message
+    document.getElementById("popup-close").addEventListener("click", hidePopupMessage);
+
 
 $(document).ready(function() {
     $("form#new-account").submit(function(event) {
