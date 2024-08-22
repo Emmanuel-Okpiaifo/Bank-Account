@@ -47,7 +47,6 @@ BankApp.prototype.findAccount = function(id) {
 
 // User Interface Logic
 let bankApp = new BankApp();
-let currentAccount = null;
 
 function displayAccountDetails(account) {
     let transactionList = $("ul#transactions");
