@@ -238,8 +238,6 @@ header {
     font-weight: 400;
 }
 
-
-
 .popup {
     position: fixed;
     top: 50%;
@@ -280,6 +278,68 @@ header {
     margin-top: 10px;
 }
 
+
+.container {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.form-control {
+    width: 80%; 
+    margin: 10px auto; 
+    padding: 8px; 
+    font-size: 14px; 
+    border-radius: 5px; 
+}
+
+button.btnn {
+    width: 60%; 
+    padding: 10px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    margin: 10px auto; 
+    display: block; 
+}
+
+h3.text-center {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+
+#account-section {
+    margin-top: 20px; 
+}
+
+#balance {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+
+#transactions {
+    max-width: 100%;
+    margin: 0 auto 20px; 
+    padding: 10px; 
+    background-color: #f8f9fa; 
+    border-radius: 5px; 
+}
+
+
+input[type="radio"] {
+    margin-right: 5px; 
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%; 
+    }
+
+    .form-control, button.btn {
+        width: 100%; 
+    }
+}
 
 .container3 {
     display: flex;

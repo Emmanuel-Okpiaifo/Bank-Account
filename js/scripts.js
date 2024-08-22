@@ -52,11 +52,11 @@ function displayAccountDetails(account) {
     let transactionList = $("ul#transactions");
     let htmlForTransactionInfo = "";
     account.transactions.forEach(function(transaction) {
-        htmlForTransactionInfo += `<li>${transaction.type}: $${transaction.amount}</li>`;
+        htmlForTransactionInfo += `<li>${transaction.type}: NGN${transaction.amount}</li>`;
     });
     transactionList.html(htmlForTransactionInfo);
 
-    $("#balance").text(`Balance: $${account.getBalance()}`);
+    $("#balance").text(`Balance: NGN${account.getBalance()}`);
 }
 
 function showPopupMessage(message) {
@@ -108,3 +108,4 @@ $(document).ready(function() {
 
     attachAccountListeners();
 });
+
