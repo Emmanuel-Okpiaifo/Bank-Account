@@ -278,154 +278,86 @@ header {
     margin-top: 10px;
 }
 
-
 .container {
-    max-width: 600px; 
-    margin: 0 auto; 
+    max-width: 600px;
+    margin: 0 auto;
     font-weight: bolder;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 40px 20px;
+    width: 350px;
+    text-align: center;
+    margin: auto;
 }
 
-.banking{
-     background: url('../img/images.jpeg') no-repeat center center/cover;
+.banking {
+    background: url('../img/background.png') no-repeat center/cover;
     padding: 40px;
     position: relative;
 }
 
-.form-group{
-    color: white;
-}
-
 .form-control {
-    width: 80%; 
-    margin: 10px auto; 
-    padding: 8px; 
-    font-size: 14px; 
-    border-radius: 5px; 
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
 button.btnn {
-    width: 60%; 
-    padding: 10px; 
-    font-size: 16px; 
-    border-radius: 5px; 
-    margin: 10px auto; 
-    display: block; 
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
 }
 
 h3.text-center {
-    font-size: 24px; 
-    margin-bottom: 20px; 
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-
 #account-section {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 #balance {
-    font-size: 20px; 
-    margin-bottom: 10px; 
+    font-size: 20px;
+    margin-bottom: 10px;
 }
-
 
 #transactions {
     max-width: 100%;
-    margin: 0 auto 20px; 
-    padding: 10px; 
-    background-color: #f8f9fa; 
-    border-radius: 5px; 
+    margin: 0 auto 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
 }
 
-
 input[type="radio"] {
-    margin-right: 5px; 
+    margin-right: 5px;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 576px) {
     .container {
-        max-width: 100%; 
+        max-width: 100%;
     }
 
-    .form-control, button.btn {
-        width: 100%; 
+    .form-control,
+    button.btn {
+        width: 100%;
     }
-}
-
-.container3 {
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.left-section {
-    background: url('../img/bg-slides-cards.a0b568b5.png') no-repeat center center/cover;
-    padding: 40px;
-    height: 162vh;
-    color: white;
-    position: relative;
-}
-
-.left-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-}
-
-.left-section .content {
-    position: relative;
-    z-index: 2;
-}
-
-.left-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.left-section p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-
-.right-section {
-    width: 50%;
-    background-color: white;
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.right-section img {
-    margin-bottom: 30px;
-}
-
-.right-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.right-section p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 30px;
-    text-align: center;
 }
 
 .form-group {
     width: 100%;
     margin-bottom: 15px;
+    color: white;
+}
+
+.transaction-form {
+    color: #000;
 }
 
 .form-group input {
@@ -440,47 +372,6 @@ input[type="radio"] {
 .form-group input:focus {
     border-color: #333;
     outline: none;
-}
-
-.login-btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 18px;
-    background-color: #e53935;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.login-btn:hover {
-    background-color: #d32f2f;
-}
-
-.forgot-password {
-    font-size: 14px;
-    color: #e53935;
-    text-align: right;
-    display: block;
-    margin-top: 10px;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-.footer-text {
-    font-size: 12px;
-    color: #999;
-    text-align: center;
-    margin-top: 30px;
-}
-
-
-
-h3 {
-    color: #007bff;
 }
 
 #balance {
@@ -507,8 +398,46 @@ ul#transactions li {
     border-radius: 5px;
 }
 
-.btn-block {
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #3498db;
+}
+
+
+form {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+
+.btnnn {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btnnn-primary:hover {
+    background-color: #2980b9;
 }
 
 
