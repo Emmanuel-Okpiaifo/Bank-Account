@@ -37,6 +37,7 @@ Please contact emmaokpiaifo@gmail.com with questions, comments, or issues.
 * HTML
 * CSS
 * Bootstrap
+* Jquery
 
 ## Known bugs
 * Page refresh removes all completed transactions and accounts
