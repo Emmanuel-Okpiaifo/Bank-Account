@@ -39,7 +39,6 @@ Please contact emmaokpiaifo@gmail.com with questions, comments, or issues.
 * Bootstrap
 
 ## Known bugs
-* Can only handle a single user/account at a time
 * Page refresh removes all completed transactions and accounts
 
 ### License
