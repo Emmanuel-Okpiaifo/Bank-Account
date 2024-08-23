@@ -2,145 +2,160 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/premium-trust-bank-logo-78663F8098-seeklogo.com.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/bootstrap.bundle.js"></script>
-  <script src="https://kit.fontawesome.com/2e9c6ff108.js" crossorigin="anonymous"></script>
-  <title>Bank Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/premium-trust-bank-logo-78663F8098-seeklogo.com.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/2e9c6ff108.js" crossorigin="anonymous"></script>
+    <title>Bank Account</title>
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <a href=""><img src="./img/logo-premiumtrustbank.59878c70.svg" alt="Company Logo"></a>
-    </div>
-    <nav class="navbar navbar-style">
-      <div class="navbar-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Company</a></li>
-          <li><a href="#">Investor Relations</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">CSR</a></li>
-          <li><a href="#">Sustainability</a></li>
-          <li><a href="#">Internet banking</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-
-  <div class="container mt-5">
-    <h3 class="text-center">Bank Account Manager</h3>
-
-    <form id="new-account" class="mb-4">
-      <div class="form-group">
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" class="form-control" min="0" required>
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" class="form-control" min="0" required>
-        <label for="initial-deposit">Initial Deposit Amount:</label>
-        <input type="number" id="initial-deposit" class="form-control" min="0" required>
-      </div>
-      <button type="submit" class="btnn btn-primary btn-block">Create Account</button>
-    </form>
-
-    <div id="account-section" class="mt-4" style="display:none;">
-      <h4 id="balance"></h4>
-      <ul id="transactions" class="list-group mb-4"></ul>
-
-      <form id="transaction-form">
-        <div class="form-group">
-          <label>Transaction Type:</label><br>
-          <input type="radio" name="action" value="deposit" checked> Deposit
-          <input type="radio" name="action" value="withdraw"> Withdraw
+    <header>
+        <div class="logo">
+            <a href=""><img src="./img/logo-premiumtrustbank.59878c70.svg" alt="Company Logo"></a>
         </div>
-        <div class="form-group">
-          <label for="transaction-amount">Amount:</label>
-          <input type="number" id="transaction-amount" class="form-control" min="0" required>
-        </div>
-        <button type="submit" class="btnn btn-success btn-block">Submit Transaction</button>
-      </form>
-    </div>
-  </div>
-
-
-  <div id="popup-message" class="popup hidden">
-    <p id="popup-text"></p>
-    <button id="popup-close">OK</button>
-  </div>
-
-
-  <footer>
-    <div class="container-fluid p-0">
-      <div class="row text-left">
-        <div class="col-md-5 col-sm-5">
-          <h4 class="text-light">About us</h4>
-          <p class="text-muted">Why waste your time surfing the interney when you can have ready-made templates
-            delivered to your email? At check.com, our developers have made sure to provide easy and affordable services
-            to our customers.</p>
-          <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | This template is made by
-            <span> Emmanuel Okpiaifo</span>
-          </p>
-        </div>
-        <div class="col-md-5 col-sm-12">
-          <h4 class="text-light">Newsletter</h4>
-          <p class="text-muted">Stay Updated</p>
-          <form class="form-inline">
-            <div class="col pl-0">
-              <div class="input-group pr-5">
-                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2"
-                  placeholder="Email">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  Submit
-                </button>
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Email Submission</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        Your email has been sucessfully submitted and you will start receivng provisional updates made
-                        to this webiste sent to your email
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Understood</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                </div>
-              </div>
+        <nav class="navbar navbar-style">
+            <div class="navbar-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">CSR</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Internet banking</a></li>
+                </ul>
             </div>
-          </form>
-        </div>
-        <div class="col-md-2 col-sm-12">
-          <h4 class="text-light">Follow Us</h4>
-          <p class="text-muted">Let us be social</p>
-          <div class="column text-light">
-            <i class="fa-brands fa-facebook fa-bounce fa-lg"></i>
-            <i class="fa-brands fa-instagram fa-shake fa-lg"></i>
-            <i class="fa-brands fa-x-twitter fa-beat fa-lg"></i>
-            <i class="fa-brands fa-threads fa-beat fa-lg"></i>
+        </nav>
+    </header>
+
+    <div class="banking">
+    <div class="container mt-5">
+        <h3 class="text-center">Bank Account Manager</h3>
+
+        <!-- Signup Form -->
+        <form id="signup-form" class="mb-4">
+            <div class="form-group">
+                <label for="signup-customer-id">Username:</label>
+                <input type="text" id="signup-customer-id" class="form-control" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </form>
+
+        <!-- Login Form -->
+        <form id="login-form" class="mb-4">
+            <div class="form-group">
+                <label for="login-customer-id">Username:</label>
+                <input type="text" id="login-customer-id" class="form-control" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+
+        <div id="account-section" class="mt-4" style="display:none;">
+            <h4 id="account-holder"></h4>
+            <h4 id="account-number"></h4>
+            <h4 id="balance"></h4>
+            <ul id="transaction-history" class="list-group mb-4"></ul>
+
+            <form id="transaction-form">
+                <div class="form-group1">
+                    <label>Transaction Type:</label><br>
+                    <input type="radio" name="action" value="deposit" checked> Deposit
+                    <input type="radio" name="action" value="withdraw"> Withdraw
+                </div>
+                <div class="form-group1">
+                    <label for="transaction-amount">Amount:</label>
+                    <input type="number" id="transaction-amount" class="form-control" min="0" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Submit Transaction</button>
+            </form>
+            <button id="logout-btn" class="btn btn-danger btn-block mt-3">Logout</button>
           </div>
         </div>
-      </div>
     </div>
-  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="js/scripts.js"></script>
+    <div id="popup-message" class="popup hidden">
+        <p id="popup-text"></p>
+        <button id="popup-close">OK</button>
+    </div>
+
+    
+  </div>
+
+    <footer>
+        <div class="container-fluid p-0">
+            <div class="row text-left">
+                <div class="col-md-5 col-sm-5">
+                    <h4 class="text-light">About us</h4>
+                    <p class="text-muted">Why waste your time surfing the internet when you can have ready-made templates
+                        delivered to your email? At check.com, our developers have made sure to provide easy and affordable services
+                        to our customers.</p>
+                    <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | This template is made by
+                        <span> Emmanuel Okpiaifo</span>
+                    </p>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <h4 class="text-light">Newsletter</h4>
+                    <p class="text-muted">Stay Updated</p>
+                    <form class="form-inline">
+                        <div class="col pl-0">
+                            <div class="input-group pr-5">
+                                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2"
+                                    placeholder="Email">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Submit
+                                </button>
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Email Submission</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Your email has been successfully submitted, and you will start receiving updates sent
+                                                to your email.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Understood</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h4 class="text-light">Follow Us</h4>
+                    <p class="text-muted">Let us be social</p>
+                    <div class="column text-light">
+                        <i class="fa-brands fa-facebook fa-bounce fa-lg"></i>
+                        <i class="fa-brands fa-instagram fa-shake fa-lg"></i>
+                        <i class="fa-brands fa-x-twitter fa-beat fa-lg"></i>
+                        <i class="fa-brands fa-threads fa-beat fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
